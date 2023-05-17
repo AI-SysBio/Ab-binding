@@ -11,7 +11,7 @@ This repository address the specific task of **finding convergent evolution to a
 
 ## Launch the analysis
 
-This repositroy combines the CDRsim[1], paratype[2] and Abligity[3] method, which rely on ANARCI and parapred, which have specific requirements. Only runs on Linux, and parapred requires an old version of Tensofrlow so it's not compatible with the newest version of python.
+This repositroy combines the CDRsim [1], paratype [2] and Abligity [3] method, which rely on ANARCI and parapred, which have specific requirements. Only runs on Linux, and parapred requires an old version of Tensofrlow so it's not compatible with the newest version of python.
 
 &nbsp;
 
