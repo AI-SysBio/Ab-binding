@@ -1,7 +1,7 @@
 # Ab-binding
 Identify antibodies binding the same epitope.
 
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Ab-binding/blob/main/img/binder.png" width=500>
+<img src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/binder.png" width=500>
 
 
 
