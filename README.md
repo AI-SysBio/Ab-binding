@@ -11,7 +11,7 @@ This repository address the specific task of **finding convergent specificity ev
 
 ## Launch the analysis
 
-The script in `Ab_binding.py` combines the CDRsim [1], Paratype [2] and Abligity [3] framework to identify potential common binders. Importantly, these rely on [ANARCI](https://github.com/oxpig/ANARCI) and [parapred](https://github.com/eliberis/parapred) which have quite specific requirements to run. They can only be execute on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
+The script in `Ab_binding.py` combines the CDRsim [1], Paratype [2] and Abligity [3] framework to identify potential common binders. Importantly, these rely on [ANARCI](https://github.com/oxpig/ANARCI) and [parapred](https://github.com/eliberis/parapred) which have quite specific requirements to run. They can only be executed on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
 
 	- conda create -n parapred python=3.6
 	- conda activate parapred
