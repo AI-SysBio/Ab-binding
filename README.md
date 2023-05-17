@@ -13,8 +13,8 @@ This repository address the specific task of **finding convergent evolution to a
 
 This repositroy combines the CDRsim [1], paratype [2] and Abligity [3] method, which are implemented in `Ab_binding.py`. Importantly, these rely on ANARCI and parapred which have quite specific requirements to run. They only runs on Linux, and parapred requires an old version of Tensofrlow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
 
-        - conda create -n parapred python=3.6
-        - conda activate parapred
+	- conda create -n parapred python=3.6
+	- conda activate parapred
 	- pip install -r parapred/requirements.txt
 
 Then install ANARCI and Levenshtein with:
