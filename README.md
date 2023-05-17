@@ -11,7 +11,7 @@ This repository address the specific task of **finding convergent specificity ev
 
 ## Launch the analysis
 
-The script in `Ab_binding.py` combines the CDRsim [1], Paratype [2] and Abligity [3] framework to identify potential common binders. Importantly, these rely on [ANARCI](https://github.com/oxpig/ANARCI) and [parapred](https://github.com/eliberis/parapred) which have quite specific requirements to run. They can only be executed on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda Linux environment:
+The script in `Ab_binding.py` combines the CDRsim [1], Paratype [2] and AbLigity [3] framework to identify potential common binders. Importantly, these rely on [ANARCI](https://github.com/oxpig/ANARCI) and [parapred](https://github.com/eliberis/parapred) which have quite specific requirements to run. They can only be executed on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda Linux environment:
 
 	- conda create -n parapred python=3.6
 	- conda activate parapred
@@ -22,9 +22,13 @@ Then install ANARCI and Levenshtein with:
 	- pip install python-Levenshtein
 	- conda install -c bioconda anarci
 
-Importantly, if you want to use Abligity, You need to get full antibody structures by first submitting your sequences to Ab structure inference pipeline such as [Repertoire Builder](https://sysimm.org/rep_builder/). Then, to run an analysis, you can simply run an example analysis with `run_example.py`
+Importantly, if you want to use AbLigity, You need to get full antibody structures by first submitting your sequences to Ab structure inference pipeline such as [Repertoire Builder](https://sysimm.org/rep_builder/). Then, to run an analysis, you can simply run an example analysis with `run_example.py`
 
 &nbsp;
+
+## Do I need both chains ?
+
+While the three methods are more reliable when paired heavy chain and light chain sequence informationis available. They were shown to still perform well when only the heavy chain information was available.
 
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
