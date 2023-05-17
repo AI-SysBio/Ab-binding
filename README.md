@@ -11,13 +11,20 @@ This repository address the specific task of **finding convergent evolution to a
 
 ## Launch the analysis
 
-This repositroy combines the CDRsim [1], paratype [2] and Abligity [3] method, which rely on ANARCI and parapred, which have specific requirements. Only runs on Linux, and parapred requires an old version of Tensofrlow so it's not compatible with the newest version of python. `cdiversity.py` file provided in the repository:
+This repositroy combines the CDRsim [1], paratype [2] and Abligity [3] method, which are implemented in `Ab_binding.py`. Importantly, these rely on ANARCI and parapred which have quite specific requirements to run. They only runs on Linux, and parapred requires an old version of Tensofrlow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
+
+        - conda create -n parapred python=3.6
+        - conda activate parapred
+	- pip install -r parapred/requirements.txt
+
+Then install ANARCI and Levenshtein with:
 
 	- pip install python-Levenshtein
 	- conda install -c bioconda anarci
 
+Importantly, if you want to use parapred and Ab-Ligity, You need to get full antibody structures by first submitting your sequences to Ab structure inference pipeline such as [Repertoire Builder](https://sysimm.org/rep_builder/) [4].
 
-Et voila
+Then, tu run an analysis, you can simply run an example analysis with `run_example.py`
 
 &nbsp;
 
@@ -39,3 +46,5 @@ Here we show how the method in this repository can identify antibodies binding t
 [2] Richardson, Eve, et al. "A computational method for immune repertoire mining that identifies novel binders from different clonotypes, demonstrated by identifying anti-pertussis toxoid antibodies." mAbs. Vol. 13. No. 1. Taylor & Francis, 2021.
 
 [3] Wong, Wing Ki, et al. "Ab-Ligity: identifying sequence-dissimilar antibodies that bind to the same epitope." MAbs. Vol. 13. No. 1. Taylor & Francis, 2021.
+
+[4] Schritt, Dimitri, et al. "Repertoire Builder: high-throughput structural modeling of B and T cell receptors." Molecular Systems Design & Engineering 4.4 (2019): 761-768.
