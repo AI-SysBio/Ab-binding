@@ -3,7 +3,7 @@
 <img align="right" src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/binder.png" width=400>
 
 
-Antibodies are protective proteins produced by B cells in response to the presence of foreign pathogens, they have an exceptional ability to recognize a wide variety of target antigens and can display exquisite binding specificity.Advances in Adaptive Immune Receptor Repertoire Sequencing (AIRR-Seq) technologies have considerably increased the amount of repertoire data that is available for analysis and improved our understanding of the dynamics of B-cell repertoires in both individuals and populations. **This repository address the specific task of finding convergent evolution to antigen specificity accross antibodies from different repertoires**. These binders are typically from a different ancestor clones and are thus challenging to identify.
+Antibodies are protective proteins produced by B cells in response to the presence of foreign pathogens, they have an exceptional ability to recognize a wide variety of target antigens and can display exquisite binding specificity. Advances in Adaptive Immune Receptor Repertoire Sequencing (AIRR-Seq) technologies have considerably increased the amount of repertoire data that is available for analysis and improved our understanding of the dynamics of B-cell repertoires in both individuals and populations. **This repository address the specific task of finding convergent evolution to antigen specificity accross antibodies from different repertoires**. These binders are typically from a different ancestor clones and are thus challenging to identify.
 
 &nbsp;
 
