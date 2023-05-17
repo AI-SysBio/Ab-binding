@@ -3,36 +3,26 @@
 <img align="right" src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/binder.png" width=400>
 
 
-Antibodies are protective proteins produced by B cells in response to the presence of foreign pathogens, they have an exceptional ability to recognize a wide variety of target antigens and can display exquisite binding specificity.Advances in Adaptive Immune Receptor Repertoire Sequencing (AIRR-Seq) technologies have considerably increased the amount of repertoire data that is available for analysis and improved our understanding of the dynamics of B-cell repertoires in both individuals and populations. This repository address the specific task of finding convergent evolution to antigen specificity accross antibodies from different repertoires. These binders are typically from a different ancestor clones and are thus challenging to identify.
+Antibodies are protective proteins produced by B cells in response to the presence of foreign pathogens. Advances in Adaptive Immune Receptor Repertoire Sequencing (AIRR-Seq) technologies have considerably increased the amount of repertoire data that is available for analysis and improved our understanding of the dynamics of B-cell repertoires in both individuals and populations. 
 
-it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. 
+This repository address the specific task of **finding convergent evolution to antigen specificity accross antibodies from different repertoires**. These binders are typically from a different ancestor clones and are thus challenging to identify.
 
 &nbsp;
 
 ## Launch the analysis
 
-This repositroy combines the CDRsim[1], paratype[2] and Abligity[3] method, which rely on ANARCI and parapred, which have specific requirements. Only runs on Linux, and parapred requires an old version of Tensofrlow so it's not compatible with the newest version of python.
+This repositroy combines the CDRsim [1], paratype [2] and Abligity [3] method, which rely on ANARCI and parapred, which have specific requirements. Only runs on Linux, and parapred requires an old version of Tensofrlow so it's not compatible with the newest version of python.
+
+&nbsp;
 
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
 
-it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. 
-
-&nbsp;
+Here we show how the method in this repository can identify antibodies binding to the known epitopes of Collagen type II, a well characterized antigen involved in Rheumatoid Arthrisis. Since more than 40 antibodies binding to CII were previously characterized~, we can identify the epitope reactivity of many of the sequences in the immune repertoires from different organs. 
 
 <img src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/RAmice.png" width=800>
 
+&nbsp;
 
 
 ## References
