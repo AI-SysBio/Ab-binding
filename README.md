@@ -11,6 +11,13 @@ epitope reactivity between independent samples.
 
 &nbsp;
 
+## Launch the analysis
+
+This repositroy combines the CDRsim[1], paratype[2] and Abligity[3] method, which rely on ANARCI and parapred, which have specific requirements. Only runs on Linux, and parapred requires an old version of Tensofrlow so it's not compatible with the newest version of python.
+
+
+## Example: Self-epitopes in Rheumatoid Arthritis
+
 it can provide additional insights into the analysis of immune repertoires, such as finding convergent
 epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
 epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
