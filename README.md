@@ -13,15 +13,16 @@ Antibodies are protective proteins produced by B cells in response to the presen
 
 This repositroy combines the CDRsim[1], paratype[2] and Abligity[3] method, which rely on ANARCI and parapred, which have specific requirements. Only runs on Linux, and parapred requires an old version of Tensofrlow so it's not compatible with the newest version of python.
 
+&nbsp;
+
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
 
 Here we show how the method in this repository can identify antibodies binding to the known epitopes of Collagen type II, a well characterized antigen involved in Rheumatoid Arthrisis. Since more than 40 antibodies binding to CII were previously characterized~, we can identify the epitope reactivity of many of the sequences the the sequences immune repertoire. 
 
-&nbsp;
-
 <img src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/RAmice.png" width=800>
 
+&nbsp;
 
 
 ## References
