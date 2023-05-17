@@ -1,4 +1,4 @@
-# Identify antibodies binding the same epitope.
+# Identifying antibodies binding the same epitope.
 
 <img align="right" src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/binder.png" width=400>
 
