@@ -11,7 +11,7 @@ This repository address the specific task of **finding convergent specificity ev
 
 ## Launch the analysis
 
-The script in `Ab_binding.py` combines the CDRsim [1], paratype [2] and Abligity [3] framework to identify potential common binders. Importantly, these rely on ANARCI and parapred which have quite specific requirements to run. They only runs on Linux, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
+The script in `Ab_binding.py` combines the CDRsim [1], paratype [2] and Abligity [3] framework to identify potential common binders. Importantly, these rely on [ANARCI](https://github.com/oxpig/ANARCI) and [parapred](https://github.com/eliberis/parapred) which have quite specific requirements to run. They only runs on Linux, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
 
 	- conda create -n parapred python=3.6
 	- conda activate parapred
@@ -22,7 +22,7 @@ Then install ANARCI and Levenshtein with:
 	- pip install python-Levenshtein
 	- conda install -c bioconda anarci
 
-Importantly, if you want to use parapred and Ab-Ligity, You need to get full antibody structures by first submitting your sequences to Ab structure inference pipeline such as [Repertoire Builder](https://sysimm.org/rep_builder/) [4].
+Importantly, if you want to use parapred and Ab-Ligity, You need to get full antibody structures by first submitting your sequences to Ab structure inference pipeline such as [Repertoire Builder](https://sysimm.org/rep_builder/).
 
 Then, tu run an analysis, you can simply run an example analysis with `run_example.py`
 
@@ -46,5 +46,3 @@ Here we show how the method in this repository can identify antibodies binding t
 [2] Richardson, Eve, et al. "A computational method for immune repertoire mining that identifies novel binders from different clonotypes, demonstrated by identifying anti-pertussis toxoid antibodies." mAbs. Vol. 13. No. 1. Taylor & Francis, 2021.
 
 [3] Wong, Wing Ki, et al. "Ab-Ligity: identifying sequence-dissimilar antibodies that bind to the same epitope." MAbs. Vol. 13. No. 1. Taylor & Francis, 2021.
-
-[4] Schritt, Dimitri, et al. "Repertoire Builder: high-throughput structural modeling of B and T cell receptors." Molecular Systems Design & Engineering 4.4 (2019): 761-768.
