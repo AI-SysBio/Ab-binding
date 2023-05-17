@@ -29,7 +29,7 @@ Importantly, if you want to use parapred and Ab-Ligity, You need to get full ant
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
 
-Here we show how the method in this repository can identify antibodies binding to the known epitopes of Collagen type II, a well characterized antigen involved in Rheumatoid Arthrisis. Since more than 40 antibodies binding to CII were previously characterized, we can identify the epitope reactivity of many of the sequences in the immune repertoires from different organs, and observe the variability of the immune repertoire specificity within and accross these organs. 
+Here we show how the method in this repository can identify antibodies binding to the known epitopes of Collagen type II, a well characterized antigen involved in Rheumatoid Arthrisis. Since more than 40 antibodies binding to CII were previously characterized, we can identify the epitope reactivity of many of the sequences in the immune repertoires from different organs, and observe the variability of the immune repertoire specificity within and accross these organs. The figure bellow is taken from arthrisis induced mice at different days after Collagen II immunization.
 
 <img src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/RAmice.png" width=800>
 
