@@ -5,13 +5,13 @@
 
 Antibodies are protective proteins produced by B-cells in response to the presence of foreign pathogens. Advances in Adaptive Immune Receptor Repertoire Sequencing (AIRR-Seq) technologies have considerably increased the amount of repertoire data that is available for analysis and improved our understanding of the dynamics of B-cell repertoires in both individuals and populations. 
 
-This repository address the specific task of **finding convergent evolution to antigen specificity accross antibodies from different repertoires**. These binders are typically from a different ancestor and are thus challenging to identify (different germline genes or CDR3 length).
+This repository address the specific task of **finding convergent specificity evolution to antigen accross antibodies from different repertoires**. These binders are typically from a different ancestor and are thus challenging to identify (different germline genes or CDR3 length).
 
 &nbsp;
 
 ## Launch the analysis
 
-This repositroy combines the CDRsim [1], paratype [2] and Abligity [3] framework to identify potential common binders (see `Ab_binding.py`). Importantly, these rely on ANARCI and parapred which have quite specific requirements to run. They only runs on Linux, and parapred requires an old version of Tensofrlow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
+This repositroy combines the CDRsim [1], paratype [2] and Abligity [3] framework to identify potential common binders (see `Ab_binding.py`). Importantly, these rely on ANARCI and parapred which have quite specific requirements to run. They only runs on Linux, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda environmenet:
 
 	- conda create -n parapred python=3.6
 	- conda activate parapred
