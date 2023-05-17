@@ -28,7 +28,7 @@ Importantly, if you want to use AbLigity, You need to get full antibody structur
 
 ## Do I need both chains ?
 
-While the three methods are more reliable when paired heavy chain and light chain sequence informationis available. They were shown to still perform well with the heavy chain information only.
+While the three methods are more reliable when paired heavy chain and light chain sequence informationis available, they were shown to still perform well with the heavy chain information only.
 
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
