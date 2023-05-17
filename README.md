@@ -11,7 +11,7 @@ This repository address the specific task of **finding convergent specificity ev
 
 ## Launch the analysis
 
-The script in `tools/utils_AB.py` combines the CDRsim [[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9), Paratype [[2]](https://www.tandfonline.com/doi/full/10.1080/19420862.2020.1869406) and AbLigity [[3]](https://www.tandfonline.com/doi/full/10.1080/19420862.2021.1873478) framework to identify potential common binders. Importantly, these rely on [ANARCI](https://github.com/oxpig/ANARCI) and [parapred](https://github.com/eliberis/parapred) which have quite specific requirements to run. They can only be executed on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda Linux environment:
+The script implemented in `tools/utils_AB.py` combines the CDRsim [[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9), Paratype [[2]](https://www.tandfonline.com/doi/full/10.1080/19420862.2020.1869406) and AbLigity [[3]](https://www.tandfonline.com/doi/full/10.1080/19420862.2021.1873478) framework to identify potential common binders. Importantly, these rely on [ANARCI](https://github.com/oxpig/ANARCI) and [parapred](https://github.com/eliberis/parapred) which have quite specific requirements to run. They can only be executed on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda Linux environment:
 
 	- conda create -n parapred python=3.6
 	- conda activate parapred
