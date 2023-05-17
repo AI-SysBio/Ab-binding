@@ -33,7 +33,7 @@ While the three methods are more reliable when paired heavy chain and light chai
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
 
-Here we show how the method in this repository can identify antibodies binding to the known epitopes of Collagen II, a well characterized antigen involved in Rheumatoid Arthrisis. Since more than 40 antibodies binding to CII on different epitopes were previously characterized, we can identify the epitope reactivity of many of the sequences in the immune repertoires from different organs, and observe the variability of the immune repertoire specificity within and accross these organs. The figure bellow is taken from arthritis induced mice at different days after CII immunization.
+Here we show how the method in this repository can identify antibodies binding to the known epitopes of Collagen type II, a well characterized antigen involved in Rheumatoid Arthrisis. Since more than 40 antibodies binding to CII on different epitopes were previously characterized, we can identify the epitope reactivity of many of the sequences in the immune repertoires, and observe the variability of the immune repertoire specificity within and accross organs. The figure bellow is taken from arthritis induced mice at different days after CII immunization.
 
 <img src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/RAmice.png" width=800>
 
