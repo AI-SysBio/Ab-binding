@@ -16,13 +16,7 @@ This repositroy combines the CDRsim[1], paratype[2] and Abligity[3] method, whic
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
 
-it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
-epitope reactivity between independent samples. 
+Here we show how the method in this repository can identify antibodies binding to the known epitopes of Collagen type II, a well characterized antigen involved in Rheumatoid Arthrisis. Since more than 40 antibodies binding to CII were previously characterized~, we can identify the epitope reactivity of many of the sequences the the sequences immune repertoire. 
 
 &nbsp;
 
