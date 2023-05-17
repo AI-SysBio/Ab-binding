@@ -22,7 +22,7 @@ Then install ANARCI and Levenshtein with:
 	- pip install python-Levenshtein
 	- conda install -c bioconda anarci
 
-Importantly, if you want to use parapred and Ab-Ligity, You need to get full antibody structures by first submitting your sequences to Ab structure inference pipeline such as [Repertoire Builder](https://sysimm.org/rep_builder/). Then, to run an analysis, you can simply run an example analysis with `run_example.py`
+Importantly, if you want to use Abligity, You need to get full antibody structures by first submitting your sequences to Ab structure inference pipeline such as [Repertoire Builder](https://sysimm.org/rep_builder/). Then, to run an analysis, you can simply run an example analysis with `run_example.py`
 
 &nbsp;
 
