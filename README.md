@@ -1,6 +1,6 @@
 # Identify antibodies binding the same epitope.
 
-<img align="right" src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/binder.png" width=300>
+<img align="right" src="https://github.com/Aurelien-Pelissier/Ab-binding/blob/main/img/binder.png" width=350>
 
 it can provide additional insights into the analysis of immune repertoires, such as finding convergent
 epitope reactivity between independent samples. it can provide additional insights into the analysis of immune repertoires, such as finding convergent
