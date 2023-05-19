@@ -7,6 +7,13 @@ Antibodies are protective proteins produced by B-cells in response to the presen
 
 This repository address the specific task of **finding convergent specificity evolution to antigen accross antibodies from different repertoires**. These binders are typically from a different ancestor and are thus challenging to identify (different germline genes or CDR3 length).
 
+This repository support our publication:
+
+[//]: <> (Pelissier, Aurelien, et al. "DOrnatien RHeumatoid arthirsis ACB model." BioRxiv 2022)
+
+[[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9) Pelissier, Aurelien, et al. "Convergent Evolution and B-Cell Recirculation in Germinal Centers in a Human Lymph Node." BioRxiv (2022).
+
+
 &nbsp;
 
 ## Launch the analysis
@@ -41,10 +48,6 @@ Here we show how the method in this repository can identify antibodies binding t
 
 
 ## References
-[//]: <> (Pelissier, Aurelien, et al. "DOrnatien RHeumatoid arthirsis ACB model." BioRxiv 2022)
-
-[[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9) Pelissier, Aurelien, et al. "Convergent Evolution and B-Cell Recirculation in Germinal Centers in a Human Lymph Node." BioRxiv (2022).
-
 [[2]](https://www.tandfonline.com/doi/full/10.1080/19420862.2020.1869406) Richardson, Eve, et al. "A computational method for immune repertoire mining that identifies novel binders from different clonotypes, demonstrated by identifying anti-pertussis toxoid antibodies." mAbs. Vol. 13. No. 1. Taylor & Francis, 2021.
 
 [[3]](https://www.tandfonline.com/doi/full/10.1080/19420862.2021.1873478) Wong, Wing Ki, et al. "Ab-Ligity: identifying sequence-dissimilar antibodies that bind to the same epitope." MAbs. Vol. 13. No. 1. Taylor & Francis, 2021.
