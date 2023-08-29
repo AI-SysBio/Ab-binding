@@ -11,7 +11,7 @@ This repository address the specific task of **finding convergent specificity ev
 
 [//]: <> (Pelissier, Aurelien, et al. "DOrnatien RHeumatoid arthirsis ACB model." BioRxiv 2022)
 
-[[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9) Pelissier, Aurelien, et al. "Convergent Evolution and B-Cell Recirculation in Germinal Centers in a Human Lymph Node." BioRxiv (2022).
+[[1]](https://www.life-science-alliance.org/content/6/11/e202301959) Pelissier, Aurelien, et al. "Convergent Evolution and B-Cell Recirculation in Germinal Centers in a Human Lymph Node." Life Science Alliance (2023).
 
 
 &nbsp;
