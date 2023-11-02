@@ -23,7 +23,7 @@ CDRsim [[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9), Parat
 
 ## Prerequies
 
-Depending on you metrics of interrest, you will need different requirements. First, any structure based metrics, such as TM-score, RMSE or Ab-ligity, requires the pdb structure of all sequences you whish to compare. You can obtain these structures from your sequences with a homology modeling algorithm such as [Repertoire Builder](https://sysimm.org/rep_builder/) or recent with deep learning frameworks such as [IgFold](https://www.nature.com/articles/s41467-023-38063-x). Then, most metrics rely on [parapred](https://github.com/eliberis/parapred) and [ANARCI](https://github.com/oxpig/ANARCI) which have quite specific requirements to run. They can only be executed on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda Linux environment:
+Depending on you metrics of interrest, you will need different requirements. First, most metrics rely on [parapred](https://github.com/eliberis/parapred) and [ANARCI](https://github.com/oxpig/ANARCI) which have quite specific requirements to run. They can only be executed on a **Linux** system, and parapred requires an old version of Tensorflow incompatible with the newest version of python. Thus, we advice to first create a new Anaconda Linux environment:
 
 	- conda create -n parapred python=3.6
 	- conda activate parapred
@@ -33,6 +33,9 @@ Then install ANARCI and Levenshtein with:
 
 	- pip install python-Levenshtein
 	- conda install -c bioconda anarci
+
+
+ THen, any structure based metrics, such as TM-score, RMSE or Ab-ligity, requires the pdb structure of all sequences you whish to compare. You can obtain these structures from your sequences with a homology modeling algorithm such as [Repertoire Builder](https://sysimm.org/rep_builder/) or recent with deep learning frameworks such as [IgFold](https://www.nature.com/articles/s41467-023-38063-x). 
 
 ## Launch the analysis
 
