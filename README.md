@@ -35,7 +35,7 @@ Importantly, if you want to use AbLigity, You need to get full antibody structur
 
 ## Do I need both chains ?
 
-While the three methods are more reliable when paired heavy chain and light chain sequence information is available, they were shown to still perform well with the heavy chain information only. To get a higher precision, you can combine two of the methods together, but note that this will come at the cost of a lower recall. Check out [this study](https://www.biorxiv.org/content/biorxiv/early/2022/12/17/2022.11.09.463832/DC1/embed/media-1.pdf) for a benchmarking of the three methods on a Pertussis toxin binders dataset (Section 5 - Identifying common binders).
+While the three methods are more reliable when paired heavy chain and light chain sequence information is available, they were shown to still perform well with the heavy chain information only. To get a higher precision, you can combine two of the methods together, but note that this will come at the cost of a lower recall. Check out [this study](https://www.biorxiv.org/content/biorxiv/early/2022/12/17/2022.11.09.463832/DC1/embed/media-1.pdf)(Section 5) for a benchmarking of the three methods on a Pertussis toxin binders dataset (Section 5 - Identifying common binders).
 
 
 ## Example: Self-epitopes in Rheumatoid Arthritis
