@@ -42,7 +42,7 @@ Then, any structure based metrics, such as TM-score, RMSE or Ab-ligity, requires
 ## Launch the analysis
 
 For a quick pairwise computation of the distance matrix of different metrics, you can simply run the `run_example.py` script. 
-However, to adapt your own sequences to the pipeline, you will need to run the `preprocess_data()` function in order to compute the cdrs and paratopes of your sequences.
+However, to adapt your own sequences to the pipeline, you will need to run the `preprocess_data()` function in order to compute the CDRs and paratopes of your sequences.
 See the `raw_data/sample_repertoire.csv` for a file template before processing.
 
 &nbsp;
