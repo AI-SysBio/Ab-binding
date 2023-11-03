@@ -1,0 +1,45 @@
+Repertoire Builder - BCR Mode
+-----------------------------
+Elapsed Time: 00m33s
+Models Built: 17
+Failed Models: 11
+Invalid Inputs: 10
+-----------------------------
+000000 - Success, Heavy/Beta chain is highly similar to a PDB entry, Light/Alpha chain is highly similar to a PDB entry
+000001 - Success, Light/Alpha chain is highly similar to a PDB entry
+000002 - Success, Light/Alpha chain is highly similar to a PDB entry
+000003 - Success, Heavy/Beta chain is highly similar to a PDB entry, Light/Alpha chain is highly similar to a PDB entry
+000004 - Failed to model
+000005 - Success, Light/Alpha chain is highly similar to a PDB entry
+000006 - Failed to model
+000007 - Success, Light/Alpha chain is highly similar to a PDB entry
+000008 - Failed to model
+000009 - Failed to model
+000010 - Failed to model
+000011 - Failed to model
+000012 - Failed to model
+000013 - Failed to model
+000014 - Failed to model
+000015 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000016 - Success, Light/Alpha chain is highly similar to a PDB entry
+000017 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000018 - Success, Light/Alpha chain is highly similar to a PDB entry
+000019 - Failed to model
+000020 - Success, Light/Alpha chain is highly similar to a PDB entry
+000021 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000022 - Success, Light/Alpha chain is highly similar to a PDB entry
+000023 - Failed to model
+000024 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000025 - Success, Light/Alpha chain is highly similar to a PDB entry
+000026 - Invalid heavy/beta chain. - Invalid FASTA Header or Sequence
+000027 - Success, Light/Alpha chain is highly similar to a PDB entry
+000028 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000029 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000030 - Success, Heavy/Beta chain is highly similar to a PDB entry, Light/Alpha chain is highly similar to a PDB entry
+000031 - Invalid heavy/beta chain. - Invalid FASTA Header or Sequence
+000032 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000033 - Success, Heavy/Beta chain is highly similar to a PDB entry, Light/Alpha chain is highly similar to a PDB entry
+000034 - Success, Heavy/Beta chain is highly similar to a PDB entry, Light/Alpha chain is highly similar to a PDB entry
+000035 - Success, Light/Alpha chain is highly similar to a PDB entry
+000036 - Invalid light/alpha chain. - Invalid FASTA Header or Sequence
+000037 - Success, Light/Alpha chain is highly similar to a PDB entry
