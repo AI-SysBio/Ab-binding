@@ -20,9 +20,8 @@ def main():
     df = pd.read_csv('processed_data/sample_repertoire_processed.csv', sep='\t', index_col = 0)
     nseq = len(df)
     
-    compute_abligity_similarity(df)
+    #compute_abligity_similarity(df)
     
-    sys.exit()
     #Activate this script if you want to compute the Abligity similarity. You can only do it after you got all the required pdb files.
     #Note that this is quite slow to compute
     
@@ -39,7 +38,7 @@ def main():
     #1 - Build pairwise distance matrix of all sequences in our sample_repertoire:
     metrics = ["Lev_seq","CDR_dist", "paratype", "AbLigity", "RMSD", "Tm-score"] #RMSD and Tm-score are quite slow
     
-    metrics = ["Lev_seq","CDR_dist", "paratype", "AbLigity"] 
+    metrics = ["Lev_seq","CDR_dist", "paratype"] 
     
 
     if "RMSD" in metrics or 'Tm-score' in metrics:

@@ -575,10 +575,14 @@ def compute_Abligity_similarity(df, pip_dir, H_only=False):
                 pip_list = '{0}/ablist.txt'.format(pip_dir) 
                 process = subprocess.Popen('ls {0}/*_F.ht > {1}'.format(pip_dir,pip_list),stdout=subprocess.PIPE, shell=True)
                 process.wait()
-                process = subprocess.Popen('./similarity.o -l {0} -o {1}/sim.txt -c'.format(pip_list,pip_dir),stdout=subprocess.PIPE, shell=True)
+                process = subprocess.Popen('./tools/Abligity/similarity.o -l {0} -o {1}/sim.txt -c'.format(pip_list,pip_dir),stdout=subprocess.PIPE, shell=True)
                 process.wait()
                 
-            sim_matrix = pd.read_csv('{0}/sim.txt'.format(pip_dir),header=None).fillna(0).values
+            try:
+                sim_matrix = pd.read_csv('{0}/sim.txt'.format(pip_dir),header=None).fillna(0).values
+            except:
+                print('Abligity did not succeed at creating the similarity matrix')
+                sys.exit()
             np.fill_diagonal(sim_matrix, 1)
             
             
@@ -606,7 +610,11 @@ def compute_Abligity_similarity(df, pip_dir, H_only=False):
                 process = subprocess.Popen('./tools/Abligity/similarity.o -l {0} -o {1}/sim_H.txt -c'.format(pip_list_HV,pip_dir),stdout=subprocess.PIPE, shell=True)
                 process.wait()
         
-            sim_matrix_HV = pd.read_csv('{0}/sim_H.txt'.format(pip_dir),header=None).fillna(0).values
+            try:
+                sim_matrix_HV = pd.read_csv('{0}/sim_H.txt'.format(pip_dir),header=None).fillna(0).values
+            except:
+                print('Abligity did not succeed at creating the similarity matrix')
+                sys.exit()
             np.fill_diagonal(sim_matrix_HV, 1)
         
             # Recovering the indexes from the initial dataset
