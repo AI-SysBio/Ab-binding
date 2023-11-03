@@ -323,6 +323,82 @@ def reverse_complement(seq):
 
 
 
+def fill_AA_seqs(nt_seqs, Vgenes): 
+    
+    
+    """
+    Fill the initial gap in the FWR1 region with the unmutated germline of the V gene (Vroot).
+    Input:
+       seq = IMGT gapped VDJ sequence
+       Vroot = IMGT root V gene
+    """
+    
+    from Bio import SeqIO
+
+    def get_seq(database, ID):
+        #find the sequence corresponding to the ID in the list 
+        #(note that ID can just be a substring of string contained in the database)
+    
+        if isinstance(ID, float):
+            return np.nan
+        
+        #remove the blank space at the end of the ID
+        if ID[-1] == ' ':
+            ID = ID[:-1]
+        
+        IDs = [database[j].id for j in range(len(database))]
+        n=0
+        index = -1
+        for text in IDs:
+            if ID in text:
+                index = n
+                break
+            else:
+                n += 1
+        
+        if index == -1:
+            print("  Warning,",ID,"is not in found the database, return nan")
+            return np.nan
+        
+        else:
+            return ''.join(database[index].seq)
+        
+        
+    def align_and_merge(seq,Vroot):
+        """
+        Fill the initial gap in the FWR1 region with the unmutated germline of the V gene (Vroot).
+        VDJ should be longer than V0.
+        Input:
+           seq = IMGT gapped VDJ sequence
+           Vroot = IMGT root V gene
+        """
+        
+        seq_new = list(seq)
+        ngap = 0
+        for i in range(len(seq)):
+            if seq[i] == '.':
+                ngap += 1
+            else:
+                break
+            
+        for i in range(ngap):
+            seq_new[i] = Vroot[i]
+        
+        return ''.join(seq_new)
+    
+    
+    filled_ntseqs = []
+    IMGT_V = list(SeqIO.parse("IGHV.fasta", "fasta"))
+    for i in range(len(nt_seqs)):
+        Vgene = Vgenes[i]
+        seq = nt_seqs[i]
+        Vroot = get_seq(IMGT_V, Vgene)
+        full_seq = align_and_merge(seq,Vroot)
+        filled_ntseqs.append(full_seq)
+
+
+
+
 ## All functions below are about abligity
 
 
