@@ -135,9 +135,8 @@ def compute_abligity_similarity(df):
     
     from utils_AB import build_paratopes_pip, compute_Abligity_similarity
     
-    build_paratopes_pip(df, pdb_dir = 'processed_data/PDB_structures/RepBuilder/Sample_seq', pip_dir = 'processed_data/PIP_files')
-    sys.exit()
-    Ab_ligity_sim, _, _ = compute_Abligity_similarity(df, pip_dir = 'processed_data\PIP_files')
+    #build_paratopes_pip(df, pdb_dir = 'processed_data/PDB_structures/RepBuilder/Sample_seq', pip_dir = 'processed_data/PIP_files')
+    Ab_ligity_sim, _, _ = compute_Abligity_similarity(df, pip_dir = 'processed_data/PIP_files')
     np.save('processed_data/AbLigity_sim.npy', Ab_ligity_sim)
     
 

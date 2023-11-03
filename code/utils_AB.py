@@ -476,7 +476,7 @@ def build_paratopes_pip(df, pdb_dir, H_only=False, pip_dir = None):
         found = False
         for j in range(len(pip_filelist)):
             pip = pip_filelist[j]
-            if str(i).zfill(4) == os.path.basename(pip).split('.')[0]:
+            if str(i).zfill(6) == os.path.basename(pip).split('.')[0]:
                 found = True
                 
                 paratope_HC_ordered.append(paratope_HC[j])
@@ -531,7 +531,6 @@ def compute_Abligity_similarity(df, pip_dir, H_only=False):
     
     nseq = len(df)
       
-    pip_dir = "Processed/Parapred/pip"
     pip_filelist = [os.path.join(pip_dir,f) for f in os.listdir(pip_dir) if ("pip" in f and not "HV" in f)]
     paratope_HC, paratope_LC = get_pip_seq(pip_filelist)
     
@@ -576,7 +575,7 @@ def compute_Abligity_similarity(df, pip_dir, H_only=False):
                 pip_list = '{0}/ablist.txt'.format(pip_dir) 
                 process = subprocess.Popen('ls {0}/*_F.ht > {1}'.format(pip_dir,pip_list),stdout=subprocess.PIPE, shell=True)
                 process.wait()
-                process = subprocess.Popen('./tools/Abligity/similarity.o -l {0} -o {1}/sim.txt -c'.format(pip_list,pip_dir),stdout=subprocess.PIPE, shell=True)
+                process = subprocess.Popen('./similarity.o -l {0} -o {1}/sim.txt -c'.format(pip_list,pip_dir),stdout=subprocess.PIPE, shell=True)
                 process.wait()
                 
             sim_matrix = pd.read_csv('{0}/sim.txt'.format(pip_dir),header=None).fillna(0).values
