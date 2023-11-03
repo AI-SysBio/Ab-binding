@@ -29,10 +29,12 @@ Depending on you metrics of interrest, you will need different requirements. Fir
 	- conda activate parapred
 	- pip install -r tools/parapred/requirements.txt
 
-Then install ANARCI and Levenshtein with:
+Then install ANARCI, Levenshtein and tmscoring with:
 
 	- pip install python-Levenshtein
 	- conda install -c bioconda anarci
+	- pip install tmscoring
+
 
 
 Then, any structure based metrics, such as TM-score, RMSE or Ab-ligity, requires the pdb structure of all sequences you whish to compare. You can obtain these structures from your sequences with a homology modeling algorithm such as [Repertoire Builder](https://sysimm.org/rep_builder/) or recent with deep learning frameworks such as [IgFold](https://www.nature.com/articles/s41467-023-38063-x). 
