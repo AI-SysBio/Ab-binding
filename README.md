@@ -19,7 +19,7 @@ This repository address the specific task of **finding convergent specificity ev
 
 ## Metrics
 
-CDRsim [[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9), Paratype [[2]](https://www.tandfonline.com/doi/full/10.1080/19420862.2020.1869406) and AbLigity [[3]](https://www.tandfonline.com/doi/full/10.1080/19420862.2021.1873478) framework to identify potential common binders. 
+This repository combine different metrics to compare antibodies. It assess metrics based on functional similarities such as CDRsim [[1]](https://www.biorxiv.org/content/10.1101/2022.11.09.463832v9), Paratype [[2]](https://www.tandfonline.com/doi/full/10.1080/19420862.2020.1869406) and AbLigity [[3]](https://www.tandfonline.com/doi/full/10.1080/19420862.2021.1873478). Additionally, it also contains scripts to compute structure based metrics such as the tm-score and RMSD between antibody structures. 
 
 ## Prerequies
 
@@ -39,7 +39,8 @@ Then, any structure based metrics, such as TM-score, RMSE or Ab-ligity, requires
 
 ## Launch the analysis
 
-The script implemented in `tools/utils_AB.py` combines different metrics, you can run an axample analysis with `run_example.py`
+For a quick pairwise computation of the distance matrix of different metrics, you can simply run the `run_example.py` script. 
+However, to adapt your own sequences to the pipeline, you will need to run the `preprocess_data()` function in order to compute the cdrs and paratopes.
 
 &nbsp;
 
