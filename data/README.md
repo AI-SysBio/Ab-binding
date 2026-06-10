@@ -4,57 +4,56 @@
 
 This repository contains sequence-level and clone-level data from germinal center B-cell samples.
 
-The dataset includes all observed sequences, their clone assignments, and read-count information across **20 samples**, corresponding to **10 germinal centers (GCs)** with **2 replicates per GC**.
+The dataset includes heavy-chain sequences, their clone assignments, and read-count information across **20 samples**, corresponding to **10 germinal centers (GCs)** with **2 replicates per GC**.
 
 For each sequence, read abundance is provided in two forms:
 
 * raw read counts across samples,
 * normalized read counts, adjusted by the total number of reads in each sample.
 
-Clones were defined using three alternative clonotyping strategies:
+Clone assignments are provided using two clonotyping approaches:
 
-* exact junction sequence matching,
-* hierarchical agglomerative clustering with 84% junction sequence identity, denoted **`HAC_0.16`**,
-* hierarchical agglomerative clustering with 80% junction sequence identity, denoted **`HAC_0.2`**.
+* **`HAC_0.16`**, the main clone definition used for downstream analyses;
+* **`junction`**, an exact junction-matching definition provided as a reference.
 
-For downstream analyses, we recommend using **`HAC_0.16`** as the default clone definition.
+Only heavy-chain information is included in this dataset. Light-chain sequences are not provided.
 
 ## Files
 
-The repository contains two main data files:
+The repository contains clone assignments and associated sequence-level information under two clone definitions:
 
-1. a **sequence-level file**, with one row per observed sequence;
-2. a **clone-level file**, with one row per inferred clone.
+1. **`HAC_0.16`**: the recommended clone definition, based on hierarchical agglomerative clustering;
+2. **`junction`**: a reference clone definition based on exact junction sequence matching.
 
-## Sequence-level file
+For each clone definition, both sequence-level and clone-level information are provided.
 
-The sequence-level file contains one row per sequence. Each sequence is associated with its read-count profile across the 20 samples and with clone assignments under the three clonotyping strategies.
+## Sequence-level files
+
+The sequence-level files contain one row per observed heavy-chain sequence. Each sequence is associated with its read-count profile across the 20 samples and with a clone assignment under the corresponding clonotyping strategy.
+
+For the main sequence-level file, the column **`clone_label`** corresponds to the clone assignment obtained using the **`HAC_0.16`** clonotyping strategy.
 
 ### Main columns
 
-| Column     | Description                                                                                                                                                                                |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `pop`      | A list containing the raw number of reads for the sequence in each of the 20 samples.                                                                                                      |
-| `norm_pop` | A list containing the normalized read abundance for the sequence in each sample, obtained by normalizing by the total number of reads in that sample.                                      |
-| `junction` | Clone assignment based on exact junction sequence matching. Sequences are assigned to the same clone if they have identical junction sequences.                                            |
-| `HAC_0.16` | Clone assignment based on hierarchical agglomerative clustering using the same V gene, same J gene, and at least 84% junction sequence identity. This is the recommended clone definition. |
-| `HAC_0.2`  | Clone assignment based on hierarchical agglomerative clustering using the same V gene, same J gene, and at least 80% junction sequence identity.                                           |
+| Column        | Description                                                                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `clone_label` | Clone ID assigned using the recommended **`HAC_0.16`** clonotyping strategy.                                                                          |
+| `pop`         | A list containing the raw number of reads for the sequence in each of the 20 samples.                                                                 |
+| `norm_pop`    | A list containing the normalized read abundance for the sequence in each sample, obtained by normalizing by the total number of reads in that sample. |
 
-## Clone-level file
+Additional sequence-level columns may include sequence identifiers, V gene, J gene, and junction sequence.
 
-The clone-level file summarizes information for each inferred clone. It contains clone IDs and associated clone-level metadata.
+## Clone-level files
 
-Unless otherwise specified, clone-level analyses should use the clone IDs defined by **`HAC_0.16`**.
+The clone-level files summarize information for each inferred clone. Each row corresponds to one clone and includes the clone ID together with associated clone-level metadata.
+
+Unless otherwise specified, clone-level analyses should use the **`HAC_0.16`** clone definition.
 
 ## Clone definitions
 
-Three clonotyping strategies were used.
-
-### Exact junction matching: `junction`
-
-Under this definition, two sequences are assigned to the same clone if they have the exact same junction sequence.
-
 ### Hierarchical agglomerative clustering: `HAC_0.16`
+
+This is the recommended clone definition.
 
 Under this definition, two sequences are assigned to the same clone if they:
 
@@ -62,23 +61,22 @@ Under this definition, two sequences are assigned to the same clone if they:
 * use the same J gene,
 * and have at least 84% junction sequence identity.
 
-This is the recommended clone definition and should be used as the default for most analyses.
+This clone definition is used as the default for downstream analyses.
 
-### Hierarchical agglomerative clustering: `HAC_0.2`
+### Exact junction matching: `junction`
 
-Under this definition, two sequences are assigned to the same clone if they:
-
-* use the same V gene,
-* use the same J gene,
-* and have at least 80% junction sequence identity.
+This reference definition assigns two sequences to the same clone only if they have the exact same junction sequence.
 
 ## Recommended usage
 
-For downstream analyses, use the clone assignments in the **`HAC_0.16`** column. This clonotyping strategy provides the preferred balance between exact junction matching and more permissive clustering.
+For downstream analyses, use the clone assignments from **`HAC_0.16`**. In the main sequence-level file, these assignments are stored in the **`clone_label`** column.
+
+This clonotyping strategy provides the preferred balance between exact junction matching and more permissive clustering. The **`junction`** files are provided as a reference for comparison with exact junction-based clonotyping.
 
 ## Notes
 
 * The dataset contains information from **20 samples** across **10 germinal centers**, with **2 replicates per GC**.
+* The dataset contains **heavy-chain sequences only**; light-chain sequences are not included.
 * Read counts are provided both as raw counts in `pop` and as sample-normalized values in `norm_pop`.
-* Clone IDs may differ depending on the clonotyping strategy used.
+* Clone IDs may differ between the **`HAC_0.16`** and **`junction`** clone definitions.
 * Unless otherwise specified, analyses should use the **`HAC_0.16`** clone definition.
